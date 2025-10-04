@@ -35,7 +35,7 @@ export async function analyzeMessageWithOpenAI(messageText) {
 
   // Use Chat Completions for broad compatibility
   const completion = await client.chat.completions.create({
-    model: "gpt-5-mini",
+    model: "gpt-4o-mini",
     // Use model defaults (some models only support default temperature)
     messages: [
       { role: "system", content: SYSTEM_PROMPT },
